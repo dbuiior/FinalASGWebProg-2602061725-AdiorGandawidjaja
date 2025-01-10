@@ -6,7 +6,7 @@
 
 @section('css')
     <style>
-        
+
     </style>
 
 @endsection
@@ -125,7 +125,7 @@
                             <div class="row mb-4">
                                 <label for="password" class="col-md-4 col-form-label text-md-end text-lg font-medium text-gray-700">{{ __('Password') }}</label>
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror border-gray-300 focus:ring-blue-500 focus:border-blue-500 p-3 rounded-lg" name="password" required autocomplete="new-password">
+                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror border-gray-300 focus:ring-blue-500 focus:border-blue-500 p-3 rounded-lg" name="password" placeholder="Input your password" required autocomplete="new-password">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -138,7 +138,7 @@
                             <div class="row mb-4">
                                 <label for="confirm_password" class="col-md-4 col-form-label text-md-end text-lg font-medium text-gray-700">{{ __('Confirm Password') }}</label>
                                 <div class="col-md-6">
-                                    <input id="confirm_password" type="password" class="form-control border-gray-300 focus:ring-blue-500 focus:border-blue-500 p-3 rounded-lg" name="confirm_password" required autocomplete="new-password">
+                                    <input id="confirm_password" type="password" class="form-control border-gray-300 focus:ring-blue-500 focus:border-blue-500 p-3 rounded-lg" name="confirm_password" placeholder="Confirm Password your Password" required autocomplete="new-password">
                                 </div>
                             </div>
 
